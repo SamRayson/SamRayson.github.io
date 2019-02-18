@@ -1,22 +1,26 @@
+/*Defining the margin set for all header types used except for h4, by doing so there is space around the main headers used making it not pushed up against the border of the columns  */
 h1, h2, h3, h5, h6{ 
   margin-top:10px;
   margin-bottom:20px;
 }
 
+/* Defining margin set for h4 allowing for space between headings and paragraphs */
 h4{
   margin-bottom:10px;
 }
 
+/*  Setting the main background of the page to the hex colour #eeeeee */
 html{
   background: #eeeeee;
 }
 
+/*Setting the font of all text within the head of the webpage to Verdana */
 head{
     font-family: "Verdana";
 }
 
 
-
+/* Setting the parameters for the content within the body including the font type, margin and padding parameters, etc */
 body{
     font-family: "Verdana";
     margin: 0 auto;
@@ -29,7 +33,7 @@ body{
 
 
 
-
+/* Setting parameters for the header class including the background colour, the space base padding, margin and border and the text colour */
 .header {
   background-color: #1e1e1e;
   text-align: center;
@@ -40,7 +44,7 @@ body{
 
 }
 
-
+/* Creating an unordered list to be used as the nav bar and setting basic parameters for all elements within such as base padding, maximum width, background colour, etc */
 ul{ 
   max-width: 110%;
   list-style-type: none;         
@@ -50,10 +54,12 @@ ul{
   background-color: #1e1e1e;
 }
 
+/* Creating a list class that will be used in the nav bar and having all values within this float to the left */
 li{
   float: left;
 }
 
+/* Defines parameters for elements within the list class, used for each individual nav link on the nav bar */
 li a {
   display: block;
   color: white;
@@ -62,23 +68,27 @@ li a {
   text-decoration: none;
 }
   
-
+/* If the second link on the navbar is hovered over the background colour of that link is set to blue */
 .navlink2:hover{
   background-color: #0087DC;
 }
 
+/* If the third link on the navbar is hovered over the background colour of that link is set to red */
 .navlink3:hover{
   background-color: #DC241F;
 }
 
+/* If the fourth link on the navbar is hovered over the background colour of that link is set to purple */
 .navlink4:hover{
   background-color: #70147A;
 }
 
+/* If the fifth link on the navbar is hovered over the background colour of that link is set to orange */
 .navlink5:hover{
   background-color: #FDBB30;
 }
   
+/* Defines parameters of the main column used for content, limits it to 75% of the width to make room for photo gallery. */
 .column {
   float: left;
   width:75%;
@@ -88,10 +98,11 @@ li a {
   padding-left: 5px;
   padding-right: 5px; 
   bottom: 0;
-  height: relative;
+  height: relative; /*Height is set to relative to give as much height as needed for all the content as this will vary between pages*/
 
 }
 
+/* Defines parameters of the side column used for each of the photo gallery thumbnails, sets the width to 22% to give space for column and space between for aesthetic purposes */
 .columnside {
   float: right; 
   width: 22%;
@@ -100,9 +111,10 @@ li a {
   margin-right: 5px;
   color: #1e1e1e;
   background-color: white; 
-  height: relative;  
+  height: relative;  /*Height is set to relative to give as much height as needed for all the content as this will vary between pages*/
 }
 
+/* Defines parameters of the column that will hold the embedded video, set to same width as main column to seem attatched */
 .ColumnVideo {
   float: left;
   width:75%;
@@ -118,7 +130,7 @@ li a {
 
 }
 
-
+/* Defines parameters of the footer, setting position and width to make it fill out the bottom of the screen and stay there */
 .footer {
   float: left;
   color: white;
@@ -137,14 +149,6 @@ li a {
   float: left; 
 }
 
-.clearfooter {
-  height: 50px;
-  clear: both;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
 
 .row:after {
   content: "";
@@ -152,13 +156,8 @@ li a {
   clear: both;
 }
 
-/* Create four equal columns that floats next to eachother */
-.column2 {
-  float: right;
-  width: 25%;
-}
 
-/* The Modal (background) */
+/* The Modal (background), defining the parameters of the background of the lightbox  */
 .modal {
   display: none;
   position: fixed;
@@ -172,7 +171,7 @@ li a {
   background-color: black;
 }
 
-/* Modal Content */
+/* Modal Content, defining parameters of the content within the lightbox */
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -182,7 +181,7 @@ li a {
   max-width: 1200px;
 }
 
-/* The Close Button */
+/* The Close Button that will allow user to exit the lightbox */
 .close {
   color: white;
   position: absolute;
@@ -192,6 +191,7 @@ li a {
   font-weight: bold;
 }
 
+/*  Changing colour of the close button when user focuses or hvoers on it to make it more visible */
 .close:hover,
 .close:focus {
   color: #999;
@@ -204,7 +204,7 @@ li a {
   display: none;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons to allow navigation within lightbox */
 .prev,
 .next {
   cursor: pointer;
@@ -228,7 +228,7 @@ li a {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through, allows user to see the next and previous buttons better */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -243,7 +243,7 @@ li a {
   top: 0;
 }
 
-/* Caption text */
+/* Caption text parameters */
 .caption-container {
   text-align: center;
   background-color: black;
@@ -255,14 +255,17 @@ img.demo {
   opacity: 0.6;
 }
 
+
 .active,
 .demo:hover {
   opacity: 1;
 }
 
+
 img.hover-shadow {
   transition: 0.3s;
 }
+
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
